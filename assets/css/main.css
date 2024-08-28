@@ -149,7 +149,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "PP Object Sans", sans-serif;
   color: var(--text-white-color);
   background: var(--primary-bg-color);
   background-image: url(../../assets/img/bg.png);
@@ -1452,7 +1452,7 @@ html {
 
 .section-heading {
   color: var(--text-white-color);
-  font-family: "Graphik Web", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.05;
