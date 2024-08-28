@@ -1,0 +1,74 @@
+@use "../abstracts";
+
+%flexItemCenter {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    position: relative;
+    padding: 37px 0 115px;
+    background-image: url(../../assets/img/bg.png);
+    background-size: cover;
+
+    &__container {
+        position: relative;
+        @extend %flexItemCenter;
+        justify-content: center;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        width: 378px;
+        box-shadow: var(--border-color) 0px 50px 50px -20px,
+            var(--border-color) 0px 30px 60px -30px,
+            var(--border-color) 0px -2px 6px 0px inset;
+    }
+
+    &__wrap-img {
+        position: absolute;
+        left: 50%;
+        bottom: -54px;
+        translate: -50%;
+        z-index: 2;
+
+        @extend %flexItemCenter;
+        flex-direction: column;
+        gap: 10px;
+        rotate: -5deg;
+    }
+
+    &__logo {
+        width: 184px;
+    }
+
+    &__title {
+        width: 100px;
+        -webkit-text-stroke: 1px var(--text-dark-color);
+    }
+
+    &__wrap {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        translate: -50% -40%;
+        overflow: hidden;
+    }
+
+    &__box {
+        @extend %flexItemCenter;
+        gap: 42px;
+    }
+
+    &__text {
+        -webkit-text-stroke: 1px var(--text-white-color);
+        font-family: "Graphik Web", sans-serif;
+        color: transparent;
+        font-size: 6.4rem;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}
