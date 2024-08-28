@@ -1413,8 +1413,14 @@ html {
   justify-content: space-between;
   padding: 10px 24px 10px 58px;
   border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
   cursor: pointer;
+}
+.footer-container__wrap:last-child {
+  border-bottom: 1px solid var(--border-color);
+}
+.footer-container__wrap:hover {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 .footer-container__text {
   font-size: 2.8rem;
@@ -1438,6 +1444,10 @@ html {
   text-align: center;
   border: 1px solid var(--border-color);
   font-size: 1.4rem;
+  transition: background-color 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.footer-wrap__link:hover {
+  background: var(--hover-color);
 }
 
 .section-heading {
