@@ -84,7 +84,7 @@
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
 
         <!-- Script -->
-        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/load.js"></script>
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
         <title>Daddy Tattoo</title>
@@ -219,7 +219,7 @@
                             All Things Create
                         </h2>
                         <div class="create-content__box">
-                            <button class="create-content__btn">
+                            <button id="left" class="create-content__btn">
                                 <svg
                                     class="icon"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@
                                     </defs>
                                 </svg>
                             </button>
-                            <button class="create-content__btn">
+                            <button id="right" class="create-content__btn">
                                 <svg
                                     class="icon"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -276,61 +276,130 @@
                 </div>
 
                 <div class="create-container">
-                    <!-- Create Item 1 -->
-                    <article class="create-container__box">
-                        <img
-                            src="./assets/img/create/create1.png"
-                            alt=""
-                            class="create-container__img"
-                        />
-                        <h3 class="create-container__title section-heading">
-                            Apprenticeship
-                        </h3>
-                        <p class="create-container__desc">
-                            You can learn tattooing very well at Lake
-                            Wörthersee!
-                        </p>
-                    </article>
+                    <div class="create-container__carousel">
+                        <!-- Create Item 1 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create1.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title section-heading">
+                                Apprenticeship
+                            </h3>
+                            <p class="create-container__desc">
+                                You can learn tattooing very well at Lake
+                                Wörthersee!
+                            </p>
+                        </article>
 
-                    <!-- Create Item 2 -->
-                    <article class="create-container__box">
-                        <img
-                            src="./assets/img/create/create2.png"
-                            alt=""
-                            class="create-container__img"
-                        />
-                        <h3 class="create-container__title">Tattoo-Styles</h3>
-                        <p class="create-container__desc">
-                            Find out which tattoo styles might suit you.
-                        </p>
-                    </article>
+                        <!-- Create Item 2 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create2.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title">
+                                Tattoo-Styles
+                            </h3>
+                            <p class="create-container__desc">
+                                Find out which tattoo styles might suit you.
+                            </p>
+                        </article>
 
-                    <!-- Create Item 3 -->
-                    <article class="create-container__box">
-                        <img
-                            src="./assets/img/create/create3.png"
-                            alt=""
-                            class="create-container__img"
-                        />
-                        <h3 class="create-container__title">Vouchers</h3>
-                        <p class="create-container__desc">
-                            Order online and bring lasting joy.
-                        </p>
-                    </article>
+                        <!-- Create Item 3 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create3.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title">Vouchers</h3>
+                            <p class="create-container__desc">
+                                Order online and bring lasting joy.
+                            </p>
+                        </article>
 
-                    <!-- Create Item 4 -->
-                    <article class="create-container__box">
-                        <img
-                            src="./assets/img/create/create4.png"
-                            alt=""
-                            class="create-container__img"
-                        />
-                        <h3 class="create-container__title">Know-How</h3>
-                        <p class="create-container__desc">
-                            The most important thing you need to know about
-                            tattoos.
-                        </p>
-                    </article>
+                        <!-- Create Item 1 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create1.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title section-heading">
+                                Apprenticeship
+                            </h3>
+                            <p class="create-container__desc">
+                                You can learn tattooing very well at Lake
+                                Wörthersee!
+                            </p>
+                        </article>
+
+                        <!-- Create Item 2 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create2.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title">
+                                Tattoo-Styles
+                            </h3>
+                            <p class="create-container__desc">
+                                Find out which tattoo styles might suit you.
+                            </p>
+                        </article>
+
+                        <!-- Create Item 3 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create3.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title">Vouchers</h3>
+                            <p class="create-container__desc">
+                                Order online and bring lasting joy.
+                            </p>
+                        </article>
+
+                        <!-- Create Item 4 -->
+                        <article
+                            class="create-container__box"
+                            draggable="false"
+                        >
+                            <img
+                                src="./assets/img/create/create4.png"
+                                alt=""
+                                class="create-container__img"
+                            />
+                            <h3 class="create-container__title">Know-How</h3>
+                            <p class="create-container__desc">
+                                The most important thing you need to know about
+                                tattoos.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </div>
 
@@ -445,5 +514,6 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>

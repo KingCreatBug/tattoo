@@ -20,10 +20,27 @@
     }
 }
 
+.create-container__carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.create-container__carousel.dragging .create-container__box {
+    pointer-events: none;
+}
+
 .create-container {
     @extend %flexItemCenter;
     margin: 48px 0 0 12.5%;
-    overflow: hidden;
+    scroll-behavior: smooth;
+
+    &__carousel {
+        @extend %flexItemCenter;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        scroll-behavior: smooth;
+    }
 
     &__box {
         padding: 12px 12px 24px;
@@ -40,6 +57,7 @@
         display: block;
         width: 361px;
         height: 361px;
+        object-fit: cover;
     }
 
     &__title {
@@ -51,6 +69,7 @@
 
     &__desc {
         height: 45px;
+        white-space: wrap;
         margin-top: 42px;
         line-height: 1.4;
     }
