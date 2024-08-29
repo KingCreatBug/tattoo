@@ -62,18 +62,14 @@ carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 // Slide text
-function slideText() {
-    const e = document.querySelectorAll();
-    let width = 0;
-    const id = setInterval(frame, 10);
-    function frame() {
-        if (width == 100) {
-            width = 0;
-        } else {
-            width++;
-            element.style.width = width + "%";
-        }
-    }
-}
+let copy1 = document.querySelector(".footer-slide__wrap").cloneNode(true);
+document.querySelector(".footer-slide").appendChild(copy1);
 
-slideText();
+let copy2 = document.querySelector(".home__box").cloneNode(true);
+document.querySelector(".home__slide").appendChild(copy2);
+
+let copy3 = document.querySelector(".home__box1").cloneNode(true);
+document.querySelector(".home__slide1").appendChild(copy3);
+
+let copy4 = document.querySelector(".home__box2").cloneNode(true);
+document.querySelector(".home__slide2").appendChild(copy4);

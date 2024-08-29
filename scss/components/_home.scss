@@ -6,13 +6,11 @@
 }
 
 .home {
-    position: relative;
-    padding: 37px 0 115px;
+    padding: 37px 0 0;
     background-image: url(../../assets/img/bg.png);
     background-size: cover;
 
     &__container {
-        position: relative;
         @extend %flexItemCenter;
         justify-content: center;
     }
@@ -29,7 +27,7 @@
     &__wrap-img {
         position: absolute;
         left: 50%;
-        bottom: -54px;
+        bottom: 0;
         translate: -50%;
         z-index: 2;
 
@@ -50,21 +48,25 @@
 
     &__wrap {
         width: 100%;
-        position: absolute;
-        top: 40%;
+        position: relative;
         left: 50%;
-        translate: -50% -40%;
+        top: -375px;
+        translate: -50%;
+    }
+
+    &__slide {
         overflow: hidden;
+        white-space: nowrap;
     }
 
     &__box {
-        @extend %flexItemCenter;
-        gap: 42px;
+        display: inline-block;
+        animation: 25s slide infinite linear;
     }
 
     &__text {
+        margin: 0 16px;
         -webkit-text-stroke: 1px var(--text-white-color);
-        font-family: "Graphik Web", sans-serif;
         color: transparent;
         font-size: 6.4rem;
         font-weight: 900;
